@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html>
  <body>
-  <?php
- 
- // First, include Requests
-include('../library/Requests.php');
-// Next, make sure Requests can load internal classes
-Requests::register_autoloader();
 
-// Now let's make a request!
-$request = Requests::post('login.html', array('Accept' => 'application/json'));
-// Check what we received
-var_dump($request);
-  
-  ?>
+ 
+<?php
+$post = array(
+	'uname' => $POST['uname'], 
+	'psw' => $POST['psw']
+);
+echo "<h1>".$post['title']."</h1>";
+echo "<p>".$post['body']."</p>";
+echo "<hr />";
+?>
 
  </body>
  </html> 
