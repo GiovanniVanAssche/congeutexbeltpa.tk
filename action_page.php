@@ -7,8 +7,8 @@
 	 $ sudo su
 $ a2enmod php5
 $post = array(
-	'title' => $POST['title'], 
-	'body' => $POST['body']
+	'title' => $GET['title'], 
+	'body' => $GET['body']
 );
 echo "<h1>".$post['title']."</h1>";
 echo "<p>".$post['body']."</p>";
