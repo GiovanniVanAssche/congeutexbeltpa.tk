@@ -5,7 +5,7 @@
  
 <?php
 $post = array(
-	'uname' => $POST['uname'], 
+	'uname' => $GET['uname'], 
 	);
 echo "<h1>".$post['uname']."</h1>";
 ?>
