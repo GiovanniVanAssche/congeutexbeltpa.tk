@@ -5,10 +5,13 @@
  
 <?php
 $post = array(
-	'uname' => $GET['uname'], 
-	);
-echo "<h1>".$post['uname']."</h1>";
-?>
+	'title' => $GET['title'], 
+	'body' => $GET['body']
+);
+echo "<h1>".$post['title']."</h1>";
+echo "<p>".$post['body']."</p>";
+echo "<hr />";
+	 ?>
 
  </body>
  </html> 
