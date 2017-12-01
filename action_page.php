@@ -3,8 +3,8 @@
  <body>
 
 
- Welkom <?php echo $_POST[uname]; ?><br>
- Your email address is: <?php echo $_POST[psw]; ?>
+ Welkom <?php echo $_GET[uname]; ?><br>
+ Your email address is: <?php echo $_GET[psw]; ?>
 
  </body>
  </html> 
