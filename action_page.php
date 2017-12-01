@@ -4,8 +4,6 @@
 
  
 <?php
-	 $ sudo su
-$ a2enmod php5
 $post = array(
 	'title' => $GET['title'], 
 	'body' => $GET['body']
