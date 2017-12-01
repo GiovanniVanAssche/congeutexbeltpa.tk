@@ -6,11 +6,8 @@
 <?php
 $post = array(
 	'uname' => $POST['uname'], 
-	'psw' => $POST['psw']
-);
-echo "<h1>".$post['title']."</h1>";
-echo "<p>".$post['body']."</p>";
-echo "<hr />";
+	);
+echo "<h1>".$post['uname']."</h1>";
 ?>
 
  </body>
