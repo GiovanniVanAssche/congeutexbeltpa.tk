@@ -4,13 +4,7 @@
 
  
 <?php
-$post = array(
-	'title' => $GET['title'], 
-	'body' => $GET['body']
-);
-echo "<h1>".$post['title']."</h1>";
-echo "<p>".$post['body']."</p>";
-echo "<hr />";
+echo "test";
 ?>
 
  </body>
