@@ -5,8 +5,8 @@
  
 <?php
 $post = array(
-	'title' => $GET['title'], 
-	'body' => $GET['body']
+	'title' => $_POST['title'], 
+	'body' => $_POST['body']
 );
 echo "<h1>".$post['title']."</h1>";
 echo "<p>".$post['body']."</p>";
