@@ -76,8 +76,8 @@ function validate()
 	var un = document.login.username.value;
 	var pw = document.login.password.value;
 	var valid = false;
-	var usernameArray = ["Vlad", "Bob"];
-	var passwordArray = ["12345", "54321"];
+	var usernameArray = ["Giovanni", "Bob"];
+	var passwordArray = ["06044", "54321"];
 	for (var i = 0; i < usernameArray.length; i++)
  {
 	if ((un == usernameArray[i]) && (pw == passwordArray[i]))
@@ -89,7 +89,7 @@ function validate()
 	if (valid)
 	{
 		alert("Login was successful");
-		window.location = "www.google.ie";
+		window.location = "www.google.be";
 		return false;
 	}
 	var again = " tries";
@@ -116,7 +116,7 @@ function validate()
 
 <body>
 
-<form name="login_form" onsubmit="return validateForm();" method ="post">
+<form name="login_form" onsubmit="return validate();" method ="post">
 
   <div class="imgcontainer">
     <img src="login_image.jpg" alt="UTEXBEL" class="avatar">
