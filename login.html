@@ -65,13 +65,13 @@ span.psw {
  </li>
  </ul>
 
-<input type="button" class="submit" value="Log In" name="submit" onclick="validate()">
+<input type="button" class="submit" value="Log In" name="submit" onclick="validateForm()">
 </form>
-</div>
+
 
 <script>
 var count= 2;
-function validate()
+function validateForm()
 {
 	var un = document.login.username.value;
 	var pw = document.login.password.value;
@@ -116,7 +116,7 @@ function validate()
 
 <body>
 
-<form name="login_form" onsubmit="return validate();" method ="post">
+<!--<form name="login_form" onsubmit="return validate();" method ="post">
 
   <div class="imgcontainer">
     <img src="login_image.jpg" alt="UTEXBEL" class="avatar">
@@ -133,6 +133,6 @@ function validate()
    </form>
 
 
-
+-->
 </body>
 </html>
