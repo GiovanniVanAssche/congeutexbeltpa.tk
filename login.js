@@ -1,4 +1,4 @@
-<script language="javascript"><!--///*This Script allows people to enter by using a form that asks for aUserID and Password*/
+
 function pasuser(form) {
   if (form.id.value=="JavaScript") { 
     if (form.pass.value=="Kit") {              
@@ -6,4 +6,4 @@ function pasuser(form) {
     else {
       alert("Invalid Password")}} 
   else {  
-    alert("Invalid UserID")}}</script>
+    alert("Invalid UserID")}}
