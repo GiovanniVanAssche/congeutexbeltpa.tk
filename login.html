@@ -70,53 +70,19 @@ span.psw {
 
 
 <script>
-var count= 2;
-function validateForm()
-{
-	var un = document.login.username.value;
-	var pw = document.login.password.value;
-	var valid = false;
-	var usernameArray = ["Giovanni", "Bob"];
-	var passwordArray = ["06044", "54321"];
-	for (var i = 0; i < usernameArray.length; i++)
- {
-	if ((un == usernameArray[i]) && (pw == passwordArray[i]))
-	{
-		valid = true;
-		break;
+function checkLogin(form){
+	if(form.username.value == "Giovanni" & form.password.value == "06044"){
+	window.open("http://www.giovannivanassche.github.io/congeutexbel.tk/index.html");
 	}
-}
-	if (valid)
-	{
-		alert("Login was successful");
-		window.location = "www.google.be";
-		return false;
-	}
-	var again = " tries";
-	if (count ==1)
-	{
-		again = " try"
-	}
-	if (count >= 1)
-	{
-		alert("Wrong password or username")
-		count--;
-	}
-	else
-	{
-		alert("Incorrect password or username you are now blocked");
-		document.login.username.value = "You are now Blocked";
-		document.login.password.value = "Fool you can't see this";
-		document.login.username.disabled = true;
-		document.login.password.disabled = true;
-		return false;
+	else{
+		alert("The combination you've entered doesn't match!");
 	}
 }
 </script>
 
 <body>
 
-<!--<form name="login_form" onsubmit="return validate();" method ="post">
+<form name="login_form">
 
   <div class="imgcontainer">
     <img src="login_image.jpg" alt="UTEXBEL" class="avatar">
@@ -129,10 +95,10 @@ function validateForm()
     <label><b>Wachtwoord</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
         
-   <button type="submit" value="submit" name="submit">Login</button>
+   <input type="button" onclick=login_form(this.form) name="submit">Login</button>
    </form>
 
 
--->
+
 </body>
 </html>
