@@ -29,6 +29,8 @@
 	
 }
 
+
+
 .header{
 	position: absolute;
 	top: calc(50% - 35px);
@@ -38,7 +40,7 @@
 
 .header div{
 	float: left;
-	color: #fff;
+	color: #000;
 	font-family: 'Exo', sans-serif;
 	font-size: 40px;
 	font-weight: 200;
@@ -61,10 +63,10 @@
 .login input[type=text]{
 	width: 250px;
 	height: 30px;
-	background: transparent;
-	border: 1px solid rgba(255,255,255,0.6);
+	background: #fff;
+	border: 1px solid #000;
 	border-radius: 2px;
-	color: #fff;
+	color: #000;
 	font-family: 'Exo', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
@@ -74,10 +76,10 @@
 .login input[type=password]{
 	width: 250px;
 	height: 30px;
-	background: transparent;
-	border: 1px solid rgba(255,255,255,0.6);
+	background: #fff;
+	border: 1px solid #000;
 	border-radius: 2px;
-	color: #fff;
+	color: #000;
 	font-family: 'Exo', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
@@ -89,7 +91,7 @@
 	width: 260px;
 	height: 35px;
 	background: #fff;
-	border: 1px solid #fff;
+	border: 1px solid #000;
 	cursor: pointer;
 	border-radius: 2px;
 	color: #a18d6c;
@@ -110,24 +112,25 @@
 
 .login input[type=text]:focus{
 	outline: none;
-	border: 1px solid rgba(255,255,255,0.9);
+	border: 1px solid #000;
 }
 
 .login input[type=password]:focus{
 	outline: none;
-	border: 1px solid rgba(255,255,255,0.9);
+	border: 1px solid #000;
 }
 
 .login input[type=button]:focus{
 	outline: none;
+	border: 1px solid #000;
 }
 
 ::-webkit-input-placeholder{
-   color: rgba(255,255,255,0.6);
+   color: #000;
 }
 
 ::-moz-input-placeholder{
-   color: rgba(255,255,255,0.6);
+   color: #000;
 }
 </style>
 
@@ -137,17 +140,16 @@
 
 <body oncontextmenu="return false">
 
- <div class="body"></div>
+  <div class="body"></div>
 		<div class="grad"></div>
 		<div class="header">
-			<div>Dew<span>Clarke</span></div>
+			<div>Log<span>in</span></div>
 		</div>
 		<br>
-
 		<form name="login">
 		<div class="login">
-				<input type="text" placeholder="Please" name="userid"><br>
-				<input type="password" placeholder="Subscribe :)" name="pswrd"><br>
+				<input type="text" placeholder="Username" name="userid"><br>
+				<input type="password" placeholder="Password" name="pswrd"><br>
 				<input type="button" onclick="check(this.form)" value="Login"/>
 		</div>
 
@@ -160,11 +162,11 @@ function check(form)
  
  if(form.userid.value == "Giovanni Van Assche" && form.pswrd.value == "06044")
   {
-    window.open('index.html')
+    window.location.assign('https://giovannivanassche.github.io/congeutexbeltpa.tk/index.html')
   }
  else
  {
-   alert("Login werd niet geaccepteerd")
+   alert("De combinatie van uw naam en wachtwoord komt niet overeen!")
   }
 }
 </script>
