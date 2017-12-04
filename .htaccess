@@ -1,2 +1,0 @@
-# Use system PHP5 as default 
-AddType application/x-httpd-php5 .php
