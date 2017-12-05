@@ -1,6 +1,7 @@
    var loginUname = ["Giovanni Van Assche","Davy Vercruysse"];
    var loginPsw = ["06044","01235"];
    var LengthFor;
+
    function check(form){
 	   
    if (loginUname.length == loginPsw.length){
@@ -21,6 +22,7 @@
 	if (valid)
 	{
 		window.location.assign('https://giovannivanassche.github.io/congeutexbeltpa.tk/index.html');
+		window.location = window.location.href+'?eraseCache=true';
 		return false;
 	}
 	    else{
