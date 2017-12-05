@@ -11,7 +11,7 @@
      alert("Please contact your administrator");
     }
  	   
- 	   for (var i = 0; i < LengthFor ; i++)
+ 	   for (var i = 1; i < LengthFor ; i++)
   {
  	if ((form.userid.value == loginUname[i]) && (form.pswrd.value == loginPsw[i]))
  	{
