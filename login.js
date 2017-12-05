@@ -22,7 +22,6 @@
 	if (valid)
 	{
 		window.location.assign('https://giovannivanassche.github.io/congeutexbeltpa.tk/index.html');
-		window.location = window.location.href+'?eraseCache=true';
 		return false;
 	}
 	    else{
