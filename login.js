@@ -1,5 +1,3 @@
-<script language="javascript">
-	
    var loginUname = ["Giovanni Van Assche","Davy Vercruysse"];
    var loginPsw = ["06044","01235"];
    var LengthFor;
@@ -32,6 +30,3 @@
    
 
    }
-
- 
-</script>
