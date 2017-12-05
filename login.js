@@ -2,6 +2,7 @@
    var loginPsw = ["06044","01235"];
    var LengthFor;
 
+
    function check(form){
 	   
    if (loginUname.length == loginPsw.length){
