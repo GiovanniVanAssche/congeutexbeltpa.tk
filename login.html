@@ -157,18 +157,31 @@
 
 </form>
 <script language="javascript">
-function check(form)
-{
+	
+   var loginUname = ["Giovanni Van Assche","Davy Vercruysse"];
+   var loginPsw = ["06044","01230"];
+   var LengthFor;
+   function check(form){
+	   
+   if (loginUname.length == loginPsw.length){
+   LengthFor = loginUname.length;
+   }
+   else{
+    alert("Please contact your administrator");
+   }
+   
+   for(var i = 1; i < LengthFor.length ; i ++) {
+    if (form.userid.value == loginUname[i] & form.pswrd.value == loginPsw[i]){
+	    window.location.assign('https://giovannivanassche.github.io/congeutexbeltpa.tk/index.html')
+    }
+    else{
+	    alert("De opgegeven combinatie komen niet overeen");
+   }
+   
+
+   }
  
- if(form.userid.value == "Giovanni Van Assche" && form.pswrd.value == "06044")
-  {
-    window.location.assign('https://giovannivanassche.github.io/congeutexbeltpa.tk/index.html')
-  }
- else
- {
-   alert("De combinatie van uw naam en wachtwoord komt niet overeen!")
-  }
-}
+ 
 </script>
 </body>
 </html>
