@@ -1,1 +1,30 @@
-var _0xef9c=["\x47\x69\x6F\x76\x61\x6E\x6E\x69\x20\x56\x61\x6E\x20\x41\x73\x73\x63\x68\x65","\x44\x61\x76\x79\x20\x56\x65\x72\x63\x72\x75\x79\x73\x73\x65","\x30\x36\x30\x34\x34","\x30\x31\x32\x33\x35","\x6C\x65\x6E\x67\x74\x68","\x50\x6C\x65\x61\x73\x65\x20\x63\x6F\x6E\x74\x61\x63\x74\x20\x79\x6F\x75\x72\x20\x61\x64\x6D\x69\x6E\x69\x73\x74\x72\x61\x74\x6F\x72","\x76\x61\x6C\x75\x65","\x75\x73\x65\x72\x69\x64","\x70\x73\x77\x72\x64","\x44\x65\x20\x6F\x70\x67\x65\x67\x65\x76\x65\x6E\x20\x63\x6F\x6D\x62\x69\x6E\x61\x74\x69\x65\x20\x6B\x6F\x6D\x74\x20\x6E\x69\x65\x74\x20\x6F\x76\x65\x72\x65\x65\x6E","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x6F\x76\x61\x6E\x6E\x69\x76\x61\x6E\x61\x73\x73\x63\x68\x65\x2E\x67\x69\x74\x68\x75\x62\x2E\x69\x6F\x2F\x63\x6F\x6E\x67\x65\x75\x74\x65\x78\x62\x65\x6C\x74\x70\x61\x2E\x74\x6B\x2F\x69\x6E\x64\x65\x78\x2E\x68\x74\x6D\x6C","\x61\x73\x73\x69\x67\x6E","\x6C\x6F\x63\x61\x74\x69\x6F\x6E"];var loginUname=[_0xef9c[0],_0xef9c[1]];var loginPsw=[_0xef9c[2],_0xef9c[3]];var LengthFor;function check(_0x5421x5){if(loginUname[_0xef9c[4]]== loginPsw[_0xef9c[4]]){LengthFor= loginUname[_0xef9c[4]]}else {alert(_0xef9c[5])};for(var _0x5421x6=0;_0x5421x6< LengthFor;_0x5421x6++){if((_0x5421x5[_0xef9c[7]][_0xef9c[6]]== loginUname[_0x5421x6])&& (_0x5421x5[_0xef9c[8]][_0xef9c[6]]== loginPsw[_0x5421x6])){valid= true;break}else {alert(_0xef9c[9]);break}};if(valid){window[_0xef9c[12]][_0xef9c[11]](_0xef9c[10]);return false}}
+var loginUname = ["Giovanni Van Assche","Davy Vercruysse"];    
+var loginPsw = ["06044","01235"];    
+var LengthFor;     
+
+function check(form){         
+  if (loginUname.length == loginPsw.length){    
+    LengthFor = loginUname.length;    
+  }    
+  
+  else{     
+    alert("Please contact your administrator");    
+      }          
+  
+  for (var i = 0; i < LengthFor ; i++)  {  
+    if ((form.userid.value == loginUname[i]) && (form.pswrd.value == loginPsw[i]))  {   
+      valid = true;       
+      break;  
+    }     
+    
+    else{                                              
+      alert("De opgegeven combinatie komt niet overeen");                            
+      break;            
+    } 
+  }   
+  
+  if (valid)   {    
+    window.location.assign('https://giovannivanassche.github.io/congeutexbeltpa.tk/index.html');    
+    return false;   
+  }           
+}
