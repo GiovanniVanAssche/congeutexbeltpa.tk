@@ -31,4 +31,3 @@ function check(form){        
     return false;   
   }           
 }
-require('name.js');
