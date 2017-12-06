@@ -1,4 +1,4 @@
-var loginUname = ["Giovanni Van Assche","Davy Vercruysse"];    
+var loginUname = ["Giovanni Van Assche","David Debode","Stephane Lejour","Michaël Martens","Christophe Declercq","Paul Herregods","Luc Buyens","Danila Mircea","Patrick Mulier","Ayoub Khamlich","Armand Bayart","Davy Vercruysse","Verza Thierry"];    
 var loginPsw = ["06044","01235"];    
 var LengthFor;     
 
