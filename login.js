@@ -5,7 +5,8 @@ var Name;
 
 function check(form){         
   if (loginUname.length == loginPsw.length){    
-    LengthFor = loginUname.length;    
+    LengthFor = loginUname.length;  
+    alert(LengthFor);
   }    
   
   else{     
