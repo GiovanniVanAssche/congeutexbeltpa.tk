@@ -6,7 +6,6 @@ var Name;
 function check(form){         
   if (loginUname.length == loginPsw.length){    
     LengthFor = loginUname.length;  
-    alert(LengthFor);
   }    
   
   else{     
@@ -16,8 +15,6 @@ function check(form){        
   for (var i = 0; i < LengthFor ; i++)  {  
     if ((form.userid.value == loginUname[i]) && (form.pswrd.value == loginPsw[i]))  {   
       valid = true;
-      Name = loginUname[i];
-      alert(Name);
       break;  
     }     
     
