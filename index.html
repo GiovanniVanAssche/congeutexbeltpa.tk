@@ -4,23 +4,30 @@
 
 <table>
   <tr>
-    <th>Month</th>
-    <th>Savings</th>
+    <th>Soort</th>
+    <th>Aantal</th>
   </tr>
   <tr>
-    <td>January</td>
-    <td id="data1"></td>
+    <td>Verlof_uren</td>
+    <td id="Verlof_uren"></td>
   </tr>
   <tr>
-    <td>February</td>
-    <td id="data2"></td>
+    <td>Verlof_IR</td>
+    <td id="Verlof_IR"></td>
+  </tr>
+  <tr>
+    <td>Verlof_Jaarlijks</td>
+    <td id="Verlof_Jaarlijks"></td>
   </tr>
 </table>
  <script type="text/javascript">    
   var Verlof_uren = "28.53";    
-  var Verlof_IR = "7";   
-  document.getElementById("data1").innerHTML = Verlof_uren;    
-  document.getElementById("data2").innerHTML = Verlof_IR; 
+  var Verlof_IR = "7";
+  var Verlof_Jaarlijks = "18";
+  
+  document.getElementById("Verlof_uren").innerHTML = Verlof_uren;    
+  document.getElementById("Verlof_IR").innerHTML = Verlof_IR; 
+  document.getElementById("Verlof_Jaarlijks").innerHTML = Verlof_Jaarlijks;
  </script>
  </body>
  </html> 
