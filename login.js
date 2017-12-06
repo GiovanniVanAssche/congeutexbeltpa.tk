@@ -1,4 +1,4 @@
-var loginUname = ["Giovanni Van Assche","David Debode","Stephane Lejour","Michaël Martens","Christophe Declercq","Paul Herregods","Luc Buyens","Mircea Danila","Patrick Mulier","Ayoub Khamlich","Armand Bayart","Davy Vercruysse","Verza Thierry"];    
+var loginUname = ["Giovanni Van Assche","David Debode","Stephane Lejour","Michaël Martens","Christophe Declercq","Paul Herregods","Luc Buyens","Mircea Danila","Patrick Mulier","Ayoub Khamlich","Armand Bayart","Davy Vercruysse","Thierry Verza"];    
 var loginPsw = ["06044","01235","01235","01235","01235","01235","01235","01235","01235","01235","01235","01235","01235"];    
 var LengthFor;
 var Name;
@@ -23,5 +23,8 @@ function check(form){        
   if (valid)   {    
     window.location.assign('https://giovannivanassche.github.io/congeutexbeltpa.tk/index.html');    
     return false;   
-  }           
+  } 
+  else {
+    alert("De opgegeven combinatie komt niet overeen");
+    break;
 }
