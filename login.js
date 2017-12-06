@@ -20,15 +20,12 @@ function check(form){        
     if ((form.userid.value == loginUname[i]) && (form.pswrd.value == loginPsw[i]))  
     {   
       valid = true;
-      positionName = i;
       break;  
     }    
   }   
   
   if (valid)
   {    
-    Name = loginUname[positionName];
-    alert(Name);
     window.location.assign('https://giovannivanassche.github.io/congeutexbeltpa.tk/index.html');    
     return false;   
     break;
