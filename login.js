@@ -2,7 +2,7 @@ var loginUname = ["Giovanni Van Assche","David Debode","Stephane Lejour","Micha�
 var loginPsw = ["06044","01235","01235","01235","01235","01235","01235","01235","01235","01235","01235","01235","01235"];    
 var LengthFor;
 var Name;
-var Position;
+var positionName;
 
 function check(form){         
   if (loginUname.length == loginPsw.length)
@@ -20,14 +20,14 @@ function check(form){        
     if ((form.userid.value == loginUname[i]) && (form.pswrd.value == loginPsw[i]))  
     {   
       valid = true;
-      Position = i;
+      positionName = i;
       break;  
     }    
   }   
   
   if (valid)
   {    
-    Name = loginUname[Postion];
+    Name = loginUname[positionName];
     alert(Name);
     window.location.assign('https://giovannivanassche.github.io/congeutexbeltpa.tk/index.html');    
     return false;   
