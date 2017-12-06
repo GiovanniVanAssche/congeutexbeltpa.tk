@@ -1,7 +1,25 @@
 <!DOCTYPE html>
 <html>
- <body>
-  
-<p>Test.</p>
+
+ <script type="text/javascript">
+    var data1 = "$100";
+    var data2 = "$80";
+ </script>
+<body>
+
+<table>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td onload="this.textContent=data1;"></td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td onload="this.textContent=data2;"></td>
+  </tr>
+</table>
  </body>
  </html> 
