@@ -18,15 +18,17 @@
  		valid = true;
         break;
  	}
-    else{
- 	    alert("De opgegeven combinatie komt niet overeen");
-    }
+    
  }
   	if (valid)
   	{
   		window.location.assign('https://giovannivanassche.github.io/congeutexbeltpa.tk/index.html');
   		return false;
   	}
+        else{      
+            
+            alert("De opgegeven combinatie komt niet overeen");    
+        }
   	   
     
     
