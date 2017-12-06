@@ -18,10 +18,6 @@ function check(form){        
       break;  
     }     
     
-    else{                                              
-      alert("De opgegeven combinatie komt niet overeen");                            
-      break;            
-    } 
   }   
   
   if (valid)   {    
