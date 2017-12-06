@@ -27,4 +27,5 @@ function check(form){        
   } 
   else {
     alert("De opgegeven combinatie komt niet overeen");
+    break;
 }
