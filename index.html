@@ -2,8 +2,8 @@
 <html>
 
  <script type="text/javascript">
-    var data1 = "$100";
-    var data2 = "$80";
+    var Verlof_uren = "1";
+    var Verlof_IR = "7";
  </script>
 <body>
 
@@ -14,12 +14,14 @@
   </tr>
   <tr>
     <td>January</td>
-    <td onload="this.textContent=data1;"></td>
+    <td id="data1"></td>
   </tr>
   <tr>
     <td>February</td>
-    <td onload="this.textContent=data2;"></td>
+    <td id="data2"></td>
   </tr>
 </table>
+ document.getElementById("data1").innerHTML = Verlof_uren;
+ document.getElementById("data2").innerHTML = Verlof_IR;
  </body>
  </html> 
