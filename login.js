@@ -4,28 +4,30 @@ var LengthFor;
 var Name;
 
 function check(form){         
-  if (loginUname.length == loginPsw.length){    
+  if (loginUname.length == loginPsw.length)
+  {    
     LengthFor = loginUname.length;  
   }    
   
-  else{     
+  else
+  {     
     alert("Please contact your administrator");    
-      }          
+  }          
   
-  for (var i = 0; i < LengthFor ; i++)  {  
-    if ((form.userid.value == loginUname[i]) && (form.pswrd.value == loginPsw[i]))  {   
+  for (var i = 0; i < LengthFor ; i++)  
+  {  
+    if ((form.userid.value == loginUname[i]) && (form.pswrd.value == loginPsw[i]))  
+    {   
       valid = true;
+      Name = loginUname[i];
+      alert(Name);
       break;  
-    }     
-    
+    }    
   }   
   
-  if (valid)   {    
+  if (valid)
+  {    
     window.location.assign('https://giovannivanassche.github.io/congeutexbeltpa.tk/index.html');    
     return false;   
     break;
   } 
-  else {
-    alert("De opgegeven combinatie komt niet overeen");
-    break;
-}
