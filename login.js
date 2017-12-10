@@ -1,4 +1,4 @@
- var users = { Name: [Giovanni Van Assche","David Debode","Stephane Lejour","Michaël Martens","Christophe Declercq","Paul Herregods","Luc Buyens","Mircea Danila","Patrick Mulier","Ayoub Khamlich","Armand Bayart","Davy Vercruysse","Thierry Verza"] , psw : [""]};    
+ var users = { Name: [Giovanni Van Assche","David Debode","Stephane Lejour","Michaël Martens","Christophe Declercq","Paul Herregods","Luc Buyens","Mircea Danila","Patrick Mulier","Ayoub Khamlich","Armand Bayart","Davy Vercruysse","Thierry Verza"] , psw : ["06044","01235","01235","01235","01235","01235","01235","01235","01235","01235","01235","01235","01235"]};    
 
  
   function check(form){            
