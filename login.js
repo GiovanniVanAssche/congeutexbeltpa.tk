@@ -1,19 +1,10 @@
- var loginUname = ["Giovanni Van Assche","David Debode","Stephane Lejour","Michaël Martens","Christophe Declercq","Paul Herregods","Luc Buyens","Mircea Danila","Patrick Mulier","Ayoub Khamlich","Armand Bayart","Davy Vercruysse","Thierry Verza"];    
- var loginPsw = ["06044","01235","01235","01235","01235","01235","01235","01235","01235","01235","01235","01235","01235"];    
- var LengthFor;
- var Name;
+ var users = { Name: [Giovanni Van Assche","David Debode","Stephane Lejour","Michaël Martens","Christophe Declercq","Paul Herregods","Luc Buyens","Mircea Danila","Patrick Mulier","Ayoub Khamlich","Armand Bayart","Davy Vercruysse","Thierry Verza"] , psw : [""]};    
+
  
-  function check(form){         
-    if (loginUname.length == loginPsw.length){    
-      LengthFor = loginUname.length;
-    }    
-    
-    else{     
-     alert("Please contact your administrator");    
-       }          
+  function check(form){            
    
     for (var i = 0; i < LengthFor ; i++)  {  
-      if ((form.userid.value == loginUname[i]) && (form.pswrd.value == loginPsw[i]))  {   
+      if ((form.userid.value == users.Name[i]) && (form.pswrd.value == users.psw[i]))  {   
         valid = true;
         break;  
       }     
