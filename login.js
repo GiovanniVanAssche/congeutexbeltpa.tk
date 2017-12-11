@@ -4,10 +4,6 @@ var users = { Name:["Giovanni Van Assche","David Debode","Stephane Lejour","Mich
             Uren : ["48,52","120,22","0","0","0","0","0","0","0","0","0","0","0"],
             Jaarlijks : ["20","20","20","20","20","20","20","20","20","20","20","20","20"]}; 
 
-var Verlof_uren = "";              
-var Verlof_IR = "";        
-var Verlof_Jaarlijks = "";
-
 function check(form){  
           
     for (var i = 0; i < users.Name.length ; i++)  {  
