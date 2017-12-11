@@ -9,7 +9,8 @@ var users = { Name:["Giovanni Van Assche","David Debode","Stephane Lejour","Mich
 function check(form){  
           
     for (var i = 0; i < users.Name.length ; i++)  {  
-      if ((form.userid.value == users.Name[i]) && (form.pswrd.value == users.Psw[i]))  {  
+      if ((form.userid.value == users.Name[i]) && (form.pswrd.value == users.Psw[i]))  { 
+       sessionStorage.setItem("UserName",form.userid.value);
        sessionStorage.setItem("UserTaalcode",users.Taalcode[i]);
        sessionStorage.setItem("UserUren",users.Uren[i]);
        sessionStorage.setItem("UserInhaalRust",users.InhaalRust[i]);
