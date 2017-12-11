@@ -3,15 +3,14 @@ var users = { Name:["Giovanni Van Assche","David Debode","Stephane Lejour","Mich
             InhaalRust :["10","4,5","2","0","0","0","0","0","0","0","0","0","0"],
             Uren : ["48,52","120,22","0","0","0","0","0","0","0","0","0","0","0"],
             Jaarlijks : ["20","20","20","20","20","20","20","20","20","20","20","20","20"]}; 
+var Index;
 
 function check(form){  
           
     for (var i = 0; i < users.Name.length ; i++)  {  
       if ((form.userid.value == users.Name[i]) && (form.pswrd.value == users.Psw[i]))  {   
         alert("Login OK");
-        Verlof_uren = "10";
-        Verlof_IR = users.InhaalRust[i];
-        Verlof_Jaarlijks = users.Jaarlijks[i];
+        Index = i;
         valid = true;
         break;  
       }     
