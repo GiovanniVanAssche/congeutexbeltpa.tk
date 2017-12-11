@@ -3,7 +3,8 @@ var users = { Name:["Giovanni Van Assche","David Debode","Stephane Lejour","Mich
     Taalcode:["NL","FR","FR","NL","FR","NL","NL","FR","FR","FR","FR","NL","FR"],
     InhaalRust :["10","4,5","2","0","0","0","0","0","0","0","0","0","0"],            
     Uren : ["48,52","120,22","0","0","0","0","0","0","0","0","0","0","0"],            
-    Jaarlijks : ["20","20","20","20","20","20","20","20","20","20","20","20","20"]}; 
+    Jaarlijks : ["20","20","20","20","20","20","20","20","20","20","20","20","20"],
+    Bijkomend : ["4","1","0","0","0","3","0","0","0","0","1","0,5","4"]}; 
 
 
 function check(form){  
@@ -15,6 +16,7 @@ function check(form){
        sessionStorage.setItem("UserUren",users.Uren[i]);
        sessionStorage.setItem("UserInhaalRust",users.InhaalRust[i]);
        sessionStorage.setItem("UserJaarlijks",users.Jaarlijks[i]);
+       sessionStorage.setItem("UserBijkomend",users.Bijkomend[i]);
         valid = true;
         break;  
       }     
