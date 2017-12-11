@@ -1,6 +1,39 @@
 <!DOCTYPE html>
 <html>
  
+ <script type="text/javascript"> 
+  
+  //Declare variables
+   var Verlof_Uren;
+   var Verlof_InhaalRust;
+   var Verlof_Jaarlijks;
+  
+  
+  Verlof_Uren = sessionStorage.getItem("UserUren");
+  Verlof_InhaalRust = sessionStorage.getItem("UserInhaalRust");
+  Verlof_Jaarlijks = sessionStorage.getItem("UserJaarlijks");
+  
+  document.getElementById("Verlof_uren").innerHTML = Verlof_Uren;    
+  document.getElementById("Verlof_InhaalRust").innerHTML = Verlof_InhaalRust; 
+  document.getElementById("Verlof_Jaarlijks").innerHTML = Verlof_Jaarlijks;
+  
+  //taal soort
+  if sessionStorage.getItem("UserTaalcode") == "NL" {
+   document.getElementById("header_soort").innerHTML = "Soort";
+  }
+  if sessionStorage.getItem("UserTaalcode") == "FR" {
+   document.getElementById("header_soort").innerHTML = "Sorte";
+  }
+  
+  //taal aantal
+   if sessionStorage.getItem("UserTaalcode") == "NL" {
+   document.getElementById("header_aantal").innerHTML = "Aantal";
+  }
+  if sessionStorage.getItem("UserTaalcode") == "FR" {
+   document.getElementById("header_aantal").innerHTML = "Quantité";
+  }
+ </script>
+ 
 <style>
 #Verlof_Users {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -50,32 +83,6 @@
 </table>
   
   
- <script type="text/javascript"> 
-   var Verlof_Uren;
-   var Verlof_InhaalRust;
-   var Verlof_Jaarlijks;
-  Verlof_Uren = sessionStorage.getItem("UserUren");
-  Verlof_InhaalRust = sessionStorage.getItem("UserInhaalRust");
-  Verlof_Jaarlijks = sessionStorage.getItem("UserJaarlijks");
-  document.getElementById("Verlof_uren").innerHTML = Verlof_Uren;    
-  document.getElementById("Verlof_InhaalRust").innerHTML = Verlof_InhaalRust; 
-  document.getElementById("Verlof_Jaarlijks").innerHTML = Verlof_Jaarlijks;
-  
-  //taal soort
-  if sessionStorage.getItem("UserTaalcode") == "NL" {
-   document.getElementById("header_soort").innerHTML = "Soort";
-  }
-  if sessionStorage.getItem("UserTaalcode") == "FR" {
-   document.getElementById("header_soort").innerHTML = "Sorte";
-  }
-  
-  //taal aantal
-   if sessionStorage.getItem("UserTaalcode") == "NL" {
-   document.getElementById("header_aantal").innerHTML = "Aantal";
-  }
-  if sessionStorage.getItem("UserTaalcode") == "FR" {
-   document.getElementById("header_aantal").innerHTML = "Quantité";
-  }
- </script>
+ 
  </body>
  </html> 
