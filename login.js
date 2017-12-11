@@ -11,7 +11,8 @@ function check(form){
    
     for (var i = 0; i < users.Name.length ; i++)  {  
       if ((form.userid.value == users.Name[i]) && (form.pswrd.value == users.Psw[i]))  {   
-        Verlof_uren = users.Uren[i];
+        alert("Login OK");
+        Verlof_uren = "10";
         Verlof_IR = users.InhaalRust[i];
         Verlof_Jaarlijks = users.Jaarlijks[i];
         valid = true;
