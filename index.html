@@ -7,24 +7,24 @@
    var Verlof_Uren;
    var Verlof_InhaalRust;
    var Verlof_Jaarlijks;
-   var UserTaalcode;
+   var User_local_Taalcode;
   
   
   Verlof_Uren = sessionStorage.getItem("UserUren");
   Verlof_InhaalRust = sessionStorage.getItem("UserInhaalRust");
   Verlof_Jaarlijks = sessionStorage.getItem("UserJaarlijks");
-  UserTaalcode = sessionStorage.getItem("UserTaalcode");
+  User_local_Taalcode = sessionStorage.getItem("UserTaalcode");
   
   document.getElementById("Verlof_uren").innerHTML = Verlof_Uren;    
   document.getElementById("Verlof_InhaalRust").innerHTML = Verlof_InhaalRust; 
   document.getElementById("Verlof_Jaarlijks").innerHTML = Verlof_Jaarlijks;
 
   
-  if (UserTaalcode == "NL"){
+  if (User_local_Taalcode == "NL"){
    document.getElementById("header_soort").innerHTML = "Soort";
    document.getElementById("header_aantal").innerHTML = "Aantal";
   }
-  if (UserTaalcode == "FR"){
+  if (User_local_Taalcode == "FR"){
    document.getElementById("header_soort").innerHTML = "Sorte";
    document.getElementById("header_aantal").innerHTML = "Quantité";
   }
