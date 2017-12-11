@@ -3,7 +3,7 @@
  
   function check(form){            
    
-    for (var i = 0; i < users.Name.length ; i++)  {  
+    for (var i = 0; i < 12 ; i++)  {  
       if ((form.userid.value == users.Name[i]) && (form.pswrd.value == users.psw[i]))  {   
         valid = true;
         break;  
