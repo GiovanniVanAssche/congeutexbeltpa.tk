@@ -2,14 +2,14 @@ var users = { Name:["Giovanni Van Assche","David Debode","Stephane Lejour","Mich
             Psw:["06044","01235","01235","01235","01235","01235","01235","01235","01235","01235","01235","01235","01235"], 
             InhaalRust :["10","4,5","2","0","0","0","0","0","0","0","0","0","0"],
             Uren : ["48,52","120,22","0","0","0","0","0","0","0","0","0","0","0"],
-            Jaarlijks : ["20","20","20","20","20","20","20","20","20","20","20","20","20"]};    
+            Jaarlijks : ["20","20","20","20","20","20","20","20","20","20","20","20","20"]}; 
 
+var Verlof_uren = "";              
+var Verlof_IR = "";        
+var Verlof_Jaarlijks = "";
 
 function check(form){  
-        var Verlof_uren = "";      
-        var Verlof_Jaarlijks = "";
-        var Verlof_Jaarlijks = "";
-   
+          
     for (var i = 0; i < users.Name.length ; i++)  {  
       if ((form.userid.value == users.Name[i]) && (form.pswrd.value == users.Psw[i]))  {   
         alert("Login OK");
