@@ -26,7 +26,7 @@
   
  <script type="text/javascript"> 
   var Verlof_Uren;
-  Verlof_Uren = users.Name[1];
+  Verlof_Uren = sessionStorage.getItem("UserIndex");
   document.getElementById("Verlof_uren").innerHTML = Verlof_uren;    
   document.getElementById("Verlof_IR").innerHTML = Verlof_IR; 
   document.getElementById("Verlof_Jaarlijks").innerHTML = Verlof_Jaarlijks;
