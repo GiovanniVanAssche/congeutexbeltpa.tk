@@ -68,10 +68,10 @@
   document.getElementById("Verlof_InhaalRust").innerHTML = Verlof_InhaalRust; 
   document.getElementById("Verlof_Jaarlijks").innerHTML = Verlof_Jaarlijks;
 
-  
-   document.getElementById("header_soort").innerHTML = User_local_Taalcode;
+  if (User_local_Taalcode == "NL"){
+   document.getElementById("header_soort").innerHTML = "Soort";
    document.getElementById("header_aantal").innerHTML = "Aantal";
- 
+   }
   
  </script>
   
