@@ -9,7 +9,7 @@ var Verlof_Jaarlijks;
 
 function check(form){            
    
-    for (var i = 0; i < 12 ; i++)  {  
+    for (var i = 0; i < users.Name.length ; i++)  {  
       if ((form.userid.value == users.Name[i]) && (form.pswrd.value == users.Psw[i]))  {   
         Verlof_uren = users.Uren[i];
         Verlof_IR = users.InhaalRust[i];
