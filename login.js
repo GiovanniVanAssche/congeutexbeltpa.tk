@@ -5,9 +5,6 @@ var users = { Name:["Giovanni Van Assche","David Debode","Stephane Lejour","Mich
     Uren : ["48,52","120,22","0","0","0","0","0","0","0","0","0","0","0"],            
     Jaarlijks : ["20","20","20","20","20","20","20","20","20","20","20","20","20"]}; 
 
-var Verlof_Uren;
-var Verlof_InhaalRust;
-var Verlof_Jaarlijks;
 
 function check(form){  
           
@@ -27,4 +24,3 @@ function check(form){
      return false;   
    }           
  }
-
