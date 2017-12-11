@@ -42,7 +42,7 @@
   </tr>
   <tr>
     <td id = "verlof_uren_name"></td>
-    <td id="Verlof_uren"></td>
+    <td id="Verlof_Uren"></td>
   </tr>
   <tr>
     <td id = "verlof_inhaalrust_name"></td>
@@ -52,36 +52,50 @@
     <td id = "verlof_jaarlijks_name"></td>
     <td id="Verlof_Jaarlijks"></td>
   </tr>
+  <tr>
+    <td id = "verlof_bijkomend_name"></td>
+    <td id="Verlof_Bijkomend"></td>
+  </tr>
 </table>
   
  
   <script type="text/javascript"> 
+ 
+   var User_local_Name;
+   var User_local_Taalcode;
+   
   
-
    var Verlof_Uren;
    var Verlof_InhaalRust;
    var Verlof_Jaarlijks;
-   var User_local_Taalcode;
    var Verlof_Bijkomend;
-   var User_local_Name;
+   
   
+  User_local_Taalcode = sessionStorage.getItem("UserTaalcode");
+  User_local_Name = sessionStorage.getItem("UserName");
   
   Verlof_Uren = sessionStorage.getItem("UserUren");
   Verlof_InhaalRust = sessionStorage.getItem("UserInhaalRust");
   Verlof_Jaarlijks = sessionStorage.getItem("UserJaarlijks");
-  User_local_Taalcode = sessionStorage.getItem("UserTaalcode");
-  User_local_Name = sessionStorage.getItem("UserName");
+  Verlof_Bijkomend = sessionStorage.getItem("UserBijkomend")
+
    
-  
+  // Verwelkoming
   document.getElementById("header_username").innerHTML = User_local_Name;
-  document.getElementById("Verlof_uren").innerHTML = Verlof_Uren;    
+  
+   // Verlof
+  document.getElementById("Verlof_Uren").innerHTML = Verlof_Uren;    
   document.getElementById("Verlof_InhaalRust").innerHTML = Verlof_InhaalRust; 
   document.getElementById("Verlof_Jaarlijks").innerHTML = Verlof_Jaarlijks;
+  document.getElementById("Verlof_Bijkomend").innerHTML = Verlof_Bijkomend;
 
+
+   // Taal definiëren
   if (User_local_Taalcode == "NL"){
    document.getElementById("verlof_uren_name").innerHTML = "Uren";
    document.getElementById("verlof_jaarlijks_name").innerHTML = "Jaarlijks verlof";
    document.getElementById("verlof_inhaalrust_name").innerHTML = "Inhaalrustdag";
+   document.getElementById("verlof_bijkomend_name").innerHTML = "Bijkomend verlof";
    
    document.getElementById("header_soort").innerHTML = "Soort";
    document.getElementById("header_aantal").innerHTML = "Aantal";
@@ -91,6 +105,7 @@
    document.getElementById("verlof_uren_name").innerHTML = "Heures";
    document.getElementById("verlof_jaarlijks_name").innerHTML = "Congé annuel";
    document.getElementById("verlof_inhaalrust_name").innerHTML = "Jour de compensation";
+   document.getElementById("verlof_bijkomend_name").innerHTML = "Congé supplémentaire";
     
    document.getElementById("header_soort").innerHTML = "Sorte";
    document.getElementById("header_aantal").innerHTML = "Quantité";
