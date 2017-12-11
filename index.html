@@ -1,10 +1,36 @@
 <!DOCTYPE html>
 <html>
+ 
+<style>
+#Verlof_Users {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#Verlof_Users td, #Verlof_Users th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#Verlof_Users tr:nth-child(even){background-color: #f2f2f2;}
+
+#Verlof_Users tr:hover {background-color: #ddd;}
+
+#Verlof_Users th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+</style>
+ 
 <body>
   
   <h1 id="Header_Name"></h1>
 
-<table align="center" border ="1">
+<table id="Verlof_Users" align="center" border ="1">
   <tr>
     <th>Soort</th>
     <th>Aantal</th>
