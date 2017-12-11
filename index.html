@@ -28,7 +28,7 @@
  
 <body>
   
-  <h1 id="Header_Name"></h1>
+  <h1 id="header_username"></h1>
 
 <table id="Verlof_Users">
   <tr>
@@ -36,7 +36,7 @@
     <th id = "header_aantal"></th>
   </tr>
   <tr>
-    <td>Uren</td>
+    <td id = ""></td>
     <td id="Verlof_uren"></td>
   </tr>
   <tr>
@@ -63,12 +63,15 @@
   Verlof_InhaalRust = sessionStorage.getItem("UserInhaalRust");
   Verlof_Jaarlijks = sessionStorage.getItem("UserJaarlijks");
   User_local_Taalcode = sessionStorage.getItem("UserTaalcode");
+  User_local_Name = sessionStorage.getItem(UserName);
   
+  document.getElementById("header_username").innerHTML = User_local_Name;
   document.getElementById("Verlof_uren").innerHTML = Verlof_Uren;    
   document.getElementById("Verlof_InhaalRust").innerHTML = Verlof_InhaalRust; 
   document.getElementById("Verlof_Jaarlijks").innerHTML = Verlof_Jaarlijks;
 
   if (User_local_Taalcode == "NL"){
+   
    document.getElementById("header_soort").innerHTML = "Soort";
    document.getElementById("header_aantal").innerHTML = "Aantal";
    }
