@@ -15,7 +15,7 @@
   </tr>
   <tr>
     <td>Inhaal Rustdag</td>
-    <td id="Verlof_IR"></td>
+    <td id="Verlof_InhaalRust"></td>
   </tr>
   <tr>
     <td>Jaarlijks Verlof</td>
@@ -25,10 +25,14 @@
   
   
  <script type="text/javascript"> 
-  var Verlof_Uren;
-  Verlof_Uren = sessionStorage.getItem("UserIndex");
+   var Verlof_Uren;
+   var Verlof_InhaalRust;
+   var Verlof_Jaarlijks;
+  Verlof_Uren = sessionStorage.getItem("UserUren");
+  Verlof_InhaalRust = sessionStorage.getItem("UserInhaalRust");
+  Verlof_Jaarlijks = sessionStorage.getItem("UserJaarlijks");
   document.getElementById("Verlof_uren").innerHTML = Verlof_Uren;    
-  document.getElementById("Verlof_IR").innerHTML = Verlof_IR; 
+  document.getElementById("Verlof_InhaalRust").innerHTML = Verlof_InhaalRust; 
   document.getElementById("Verlof_Jaarlijks").innerHTML = Verlof_Jaarlijks;
  </script>
  </body>
