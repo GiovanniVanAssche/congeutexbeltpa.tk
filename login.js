@@ -12,7 +12,7 @@ function check(form){
           
     for (var i = 0; i < users.Name.length ; i++)  {  
       if ((form.userid.value == users.Name[i]) && (form.pswrd.value == users.Psw[i]))  {   
-       sessionStorage.setItem("UserIndex",i);
+       sessionStorage.setItem("UserIndex",users.Name[i]);
         valid = true;
         break;  
       }     
