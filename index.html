@@ -103,11 +103,15 @@
   Verlof_Ancienniteit_20 = sessionStorage.getItem("UserAncienniteit_20");
   Verlof_Ancienniteit_25 = sessionStorage.getItem("UserAncienniteit_25");
   Verlof_Kermis = sessionStorage.getItem("UserKermis");
-  Verlof_Braderie = sessionStorage.getItem("UserBraderie")
+  Verlof_Braderie = sessionStorage.getItem("UserBraderie");
    
   // Verwelkoming
   document.getElementById("header_username").innerHTML = User_local_Name;
-   
+  
+  if (User_local_Name == "Giovanni Van Assche"){
+  alert("Welkom op deze pagina");
+   break;
+  }
   
    // Verlof
   document.getElementById("Verlof_Uren").innerHTML = Verlof_Uren;    
