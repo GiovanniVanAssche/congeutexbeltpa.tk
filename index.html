@@ -120,13 +120,15 @@
     var Verlof_Ancienniteit_25;
     var Verlof_Kermis;
     var Verlof_Braderie;
+    var local_user_array;
     
     var prompt_user;
    
    
    function submitArrayData(){}
    
-    
+   local_user_array = sessionStorage.getItem("UserArray");
+   console.log(local_user_array);
    
    User_local_Taalcode = sessionStorage.getItem("UserTaalcode");
    User_local_Name = sessionStorage.getItem("UserName");
