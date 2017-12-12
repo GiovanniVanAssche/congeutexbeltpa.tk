@@ -11,7 +11,7 @@ function check(form){
           
        sessionStorage.setItem("UserName",form.userid.value);
        sessionStorage.setItem("UserTaalcode",users.Taalcode[i]);                      
-       sessionStorage.setitem("UserIndex",i);
+       sessionStorage.setItem("UserIndex",i);
           
        valid = true;
        
