@@ -69,8 +69,6 @@
    var Verlof_InhaalRust;
    var Verlof_Jaarlijks;
    var Verlof_Bijkomend;
-   var prompt_user;
-   var valid_user;
    
   
   User_local_Taalcode = sessionStorage.getItem("UserTaalcode");
@@ -84,16 +82,6 @@
    
   // Verwelkoming
   document.getElementById("header_username").innerHTML = User_local_Name;
-   
-  // Menu conge aanpassen
-  if (User_local_Name ==  "Giovanni Van Assche"){
-  prompt_user = prompt("WACHTWOORD : ");
-      }
-  if (prompt_user == "06044_utb"){
-    alert(prompt_user);
-   break;
-      }
-   
   
   
    // Verlof
