@@ -104,11 +104,12 @@
  <p>Anciënniteit 20j :</p>
  <input type="text" id = "ancienniteit_20_submit"><br>
   
- <button type="button" onclick="submitArrayData()">Verzend data</button>
+ <button type="button" onclick="submitDataArray()">Verzend data</button>
  
   <script type="text/javascript"> 
    
-    var User_Verlof = { InhaalRust :["10","4,5","2","0","0","0","0","0","0","0","0","0","0"],            
+    var User_Verlof = { Name:["Giovanni Van Assche","David Debode","Stephane Lejour","Michaël Martens","Christophe Declercq","Paul Herregods","Luc Buyens","Mircea Danila","Patrick Mulier","Ayoub Khamlich","Armand Bayart","Davy Vercruysse","Thierry Verza"],
+                        InhaalRust :["10","4,5","2","0","0","0","0","0","0","0","0","0","0"],            
                         Uren : ["27,52","120,22","0","0","0","0","0","0","0","0","0","0","0"],            
                         Jaarlijks : ["20","20","20","20","20","20","20","20","20","20","20","20","20"],
                         Bijkomend : ["4","1","0","0","0","3","0","0","0","0","1","0,5","4"],
@@ -131,12 +132,15 @@
     var Verlof_Braderie;
    
     var local_user_index_array = sessionStorage.getItem("UserIndex");
+    var index_submit_values;
     
     var prompt_user;  
    
    
    User_local_Taalcode = sessionStorage.getItem("UserTaalcode");
    User_local_Name = sessionStorage.getItem("UserName");
+   
+   index_submit_values = User_Verlof.Name.indexOf(document.getElementById("username_submit"));
    
    Verlof_Uren = User_Verlof.Uren[local_user_index_array];
    
@@ -147,7 +151,14 @@
    Verlof_Ancienniteit_25 = User_Verlof.Ancienniteit_25[local_user_index_array];
    Verlof_Kermis = User_Verlof.Kermis[local_user_index_array];
    Verlof_Braderie = User_Verlof.Braderie[local_user_index_array];
-    
+   
+   function submitDataArray(){
+   User_Verlof.Uren[index_submit_values] = document.getElementById("uren_submit");
+   User_Verlof.InhaalRust[index_submit_values] = document.getElementById("inhaalrust_submit");
+   User_Verlof.Ancienniteit_20[index_submit_values] = document.getElementById("ancienniteit_20_submit");
+   }
+   
+   
    // Verwelkoming
     document.getElementById("header_username").innerHTML = User_local_Name;
     
