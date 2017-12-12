@@ -136,20 +136,19 @@
    
    function submitArrayData(){}
    
-   local_user_array = sessionStorage.getItem("UserArray");
-   console.log(local_user_array);
+   
    
    User_local_Taalcode = sessionStorage.getItem("UserTaalcode");
    User_local_Name = sessionStorage.getItem("UserName");
    
-   Verlof_Uren = sessionStorage.getItem("UserUren");
-   Verlof_InhaalRust = sessionStorage.getItem("UserInhaalRust");
-   Verlof_Jaarlijks = sessionStorage.getItem("UserJaarlijks");
-   Verlof_Bijkomend = sessionStorage.getItem("UserBijkomend");
-   Verlof_Ancienniteit_20 = sessionStorage.getItem("UserAncienniteit_20");
-   Verlof_Ancienniteit_25 = sessionStorage.getItem("UserAncienniteit_25");
-   Verlof_Kermis = sessionStorage.getItem("UserKermis");
-   Verlof_Braderie = sessionStorage.getItem("UserBraderie");
+   Verlof_Uren = User_Verlof.Uren[local_user_index_array];
+   //Verlof_InhaalRust = sessionStorage.getItem("UserInhaalRust");
+//   Verlof_Jaarlijks = sessionStorage.getItem("UserJaarlijks");
+ //  Verlof_Bijkomend = sessionStorage.getItem("UserBijkomend");
+//   Verlof_Ancienniteit_20 = sessionStorage.getItem("UserAncienniteit_20");
+//   Verlof_Ancienniteit_25 = sessionStorage.getItem("UserAncienniteit_25");
+//   Verlof_Kermis = sessionStorage.getItem("UserKermis");
+//   Verlof_Braderie = sessionStorage.getItem("UserBraderie");
     
    // Verwelkoming
     document.getElementById("header_username").innerHTML = User_local_Name;
