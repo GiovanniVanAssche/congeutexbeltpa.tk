@@ -76,35 +76,7 @@
  
 
  
- <datalist id = "username_submit">
-  <option value="Davy Vercruysse">
-  <option value="Giovanni Van Assche">
-  <option value="David Debode">
-  <option value="Thierry Verza">
-  <option value="Patrick Mulier">
-  <option value="Mircea Danila">
-  <option value="Armand Bayart">
-  <option value="Michaël Martens">
-  <option value="Stephane Lejour">
-  <option value="Christophe Declercq">
-  <option value="Luc Buyens">
-  <option value="Ayoub Khamlich">
-  <option value="Paul Herregods">
-</datalist>
 
- <p>Naam</p>
- <input list="username_submit" type="text" id = "username_submit"><br>
- 
- <p>Uren :</p>
- <input type="text" id = "uren_submit"><br>
- 
- <p>Inhaalrust :</p>
- <input type="text" id = "inhaalrust_submit"><br>
- 
- <p>Anciënniteit 20j :</p>
- <input type="text" id = "ancienniteit_20_submit"><br>
-  
- <button type="button" onclick="submitDataArray()">Verzend data</button>
  
   <script type="text/javascript"> 
    
@@ -162,17 +134,7 @@
    // Verwelkoming
     document.getElementById("header_username").innerHTML = User_local_Name;
     
-   if (User_local_Name == "Giovanni Van Assche"){
-   prompt_user = prompt("ENTER PASSWORD : ");
-    }
-    
-   if (prompt_user == "06044_utb_gva"){
-   //document.getElementById("enter_user_uren").style.visibility="visible";
-    }
-    else{
-   //document.getElementById("enter_user_uren").style.visibility="hidden";
-    }
-    
+   
      // Verlof
    document.getElementById("Verlof_Uren").innerHTML = Verlof_Uren;    
    document.getElementById("Verlof_InhaalRust").innerHTML = Verlof_InhaalRust; 
