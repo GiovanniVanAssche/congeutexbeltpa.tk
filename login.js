@@ -1,15 +1,7 @@
 var users = { Name:["Giovanni Van Assche","David Debode","Stephane Lejour","Michaël Martens","Christophe Declercq","Paul Herregods","Luc Buyens","Mircea Danila","Patrick Mulier","Ayoub Khamlich","Armand Bayart","Davy Vercruysse","Thierry Verza"],             
     Psw:["06044","01235","01235","01235","01235","01235","01235","01235","01235","01235","01235","01235","01235"],
-    Taalcode:["NL","FR","FR","NL","FR","NL","NL","FR","FR","FR","FR","NL","FR"],
-    InhaalRust :["10","4,5","2","0","0","0","0","0","0","0","0","0","0"],            
-    Uren : ["27,52","120,22","0","0","0","0","0","0","0","0","0","0","0"],            
-    Jaarlijks : ["20","20","20","20","20","20","20","20","20","20","20","20","20"],
-    Bijkomend : ["4","1","0","0","0","3","0","0","0","0","1","0,5","4"],
-    Ancienniteit_20 : ["0","0","0","0","0","0","0","0","0","0","1","0","0"],
-    Ancienniteit_25 : ["0","0","0","0","0","0","0","0","0","0","1","0","0"],
-    Kermis : ["0","0","0","0","0","0","0","0","0","0","1","0","0"],
-    Braderie : ["0","0","0","0","0","0","0","0","0","0","1","0","0"]}; 
-
+    Taalcode:["NL","FR","FR","NL","FR","NL","NL","FR","FR","FR","FR","NL","FR"]}; 
+var userIndex;
 
 function check(form){  
           
@@ -18,17 +10,9 @@ function check(form){
       if ((form.userid.value == users.Name[i]) && (form.pswrd.value == users.Psw[i]))  { 
           
        sessionStorage.setItem("UserName",form.userid.value);
-       sessionStorage.setItem("UserTaalcode",users.Taalcode[i]);
-       sessionStorage.setItem("UserUren",users.Uren[i]);
-       sessionStorage.setItem("UserInhaalRust",users.InhaalRust[i]);
-       sessionStorage.setItem("UserJaarlijks",users.Jaarlijks[i]);
-       sessionStorage.setItem("UserBijkomend",users.Bijkomend[i]);
-       sessionStorage.setItem("UserAncienniteit_20",users.Ancienniteit_20[i]);
-       sessionStorage.setItem("UserAncienniteit_25",users.Ancienniteit_25[i]);
-       sessionStorage.setItem("UserKermis",users.Kermis[i]);
-       sessionStorage.setItem("UserBraderie",users.Braderie[i]);
-       sessionStorage.setItem("UserArray",users);                              
-                                    
+       sessionStorage.setItem("UserTaalcode",users.Taalcode[i]);                      
+       sessionStorage.setitem("UserIndex",i);
+          
        valid = true;
        
           break;  
