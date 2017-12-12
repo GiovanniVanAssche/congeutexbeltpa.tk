@@ -57,6 +57,29 @@
     <td id="Verlof_Bijkomend"></td>
   </tr>
 </table>
+ 
+ <table id="CONGE_ADAPT" visibility = "hidden">
+  <tr>
+    <th>Hallo</th>
+    <th>Dit is een test</th>
+  </tr>
+  <tr>
+    <td>dd</td>
+    <td>fdsg</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
   
  
   <script type="text/javascript"> 
@@ -69,6 +92,8 @@
    var Verlof_InhaalRust;
    var Verlof_Jaarlijks;
    var Verlof_Bijkomend;
+   var prompt_user;
+   var valid_user;
    
   
   User_local_Taalcode = sessionStorage.getItem("UserTaalcode");
@@ -82,6 +107,23 @@
    
   // Verwelkoming
   document.getElementById("header_username").innerHTML = User_local_Name;
+   
+  // Menu conge aanpassen
+  if (User_local_Name ==  "Giovanni Van Assche"){
+  prompt_user = prompt("WACHTWOORD : ");
+      }
+  if (prompt_user == "06044_utb"){
+    valid_user = true;
+      }
+   
+  if (valid_user){
+  document.getElementById("CONGE_ADAPT").style.visibility="visible";
+   return false;
+  }
+   else{
+    document.getElementById("CONGE_ADAPT").style.visibility="hidden";
+   }
+   
   
    // Verlof
   document.getElementById("Verlof_Uren").innerHTML = Verlof_Uren;    
