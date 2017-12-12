@@ -27,7 +27,8 @@ function check(form){
        sessionStorage.setItem("UserAncienniteit_25",users.Ancienniteit_25[i]);
        sessionStorage.setItem("UserKermis",users.Kermis[i]);
        sessionStorage.setItem("UserBraderie",users.Braderie[i]);
-          
+       sessionStorage.setItem("UserArray",users);                              
+                                    
        valid = true;
        
           break;  
