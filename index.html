@@ -57,29 +57,6 @@
     <td id="Verlof_Bijkomend"></td>
   </tr>
 </table>
- 
- <table id="CONGE_ADAPT" visibility = "hidden">
-  <tr>
-    <th>Hallo</th>
-    <th>Dit is een test</th>
-  </tr>
-  <tr>
-    <td>dd</td>
-    <td>fdsg</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-  </tr>
-</table>
   
  
   <script type="text/javascript"> 
@@ -113,17 +90,11 @@
   prompt_user = prompt("WACHTWOORD : ");
       }
   if (prompt_user == "06044_utb"){
-    valid_user = true;
+    alert(prompt_user);
+   break;
       }
    
-  if (valid_user){
-  document.getElementById("CONGE_ADAPT").style.visibility="visible";
-   return false;
-  }
-   else{
-    document.getElementById("CONGE_ADAPT").style.visibility="hidden";
-   }
-   
+  
   
    // Verlof
   document.getElementById("Verlof_Uren").innerHTML = Verlof_Uren;    
