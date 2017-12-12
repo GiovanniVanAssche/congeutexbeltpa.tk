@@ -56,6 +56,22 @@
     <td id = "verlof_bijkomend_name"></td>
     <td id="Verlof_Bijkomend"></td>
   </tr>
+ <tr>
+    <td id = "verlof_ancienniteit_20_name"></td>
+    <td id="Verlof_Ancienniteit_20"></td>
+  </tr>
+ <tr>
+    <td id = "verlof_ancienniteit_25_name"></td>
+    <td id="Verlof_Ancienniteit_25"></td>
+  </tr>
+  <tr>
+    <td id = "verlof_kermis_name"></td>
+    <td id="Verlof_Kermis"></td>
+  </tr>
+  <tr>
+    <td id = "verlof_braderie_name"></td>
+    <td id="Verlof_Braderie"></td>
+  </tr>
 </table>
   
  
@@ -69,6 +85,10 @@
    var Verlof_InhaalRust;
    var Verlof_Jaarlijks;
    var Verlof_Bijkomend;
+   var Verlof_Ancienniteit_20;
+   var Verlof_Ancienniteit_25;
+   var Verlof_Kermis;
+   var Verlof_Braderie;
    
   
   User_local_Taalcode = sessionStorage.getItem("UserTaalcode");
@@ -77,8 +97,11 @@
   Verlof_Uren = sessionStorage.getItem("UserUren");
   Verlof_InhaalRust = sessionStorage.getItem("UserInhaalRust");
   Verlof_Jaarlijks = sessionStorage.getItem("UserJaarlijks");
-  Verlof_Bijkomend = sessionStorage.getItem("UserBijkomend")
-
+  Verlof_Bijkomend = sessionStorage.getItem("UserBijkomend");
+  Verlof_Ancienniteit_20 = sessionStorage.getItem("UserAncienniteit_20");
+  Verlof_Ancienniteit_25 = sessionStorage.getItem("UserAncienniteit_25");
+  Verlof_Kermis = sessionStorage.getItem("UserKermis");
+  Verlof_Braderie = sessionStorage.getItem("UserBraderie")
    
   // Verwelkoming
   document.getElementById("header_username").innerHTML = User_local_Name;
@@ -89,6 +112,10 @@
   document.getElementById("Verlof_InhaalRust").innerHTML = Verlof_InhaalRust; 
   document.getElementById("Verlof_Jaarlijks").innerHTML = Verlof_Jaarlijks;
   document.getElementById("Verlof_Bijkomend").innerHTML = Verlof_Bijkomend;
+  document.getElementById("Verlof_Ancienniteit_20").innerHTML = Verlof_Ancienniteit_20;    
+  document.getElementById("Verlof_Ancienniteit_25").innerHTML = Verlof_Ancienniteit_25; 
+  document.getElementById("Verlof_Braderie").innerHTML = Verlof_Braderie;
+  document.getElementById("Verlof_Kermis").innerHTML = Verlof_Kermis;
 
 
    // Taal definiëren
@@ -97,6 +124,10 @@
    document.getElementById("verlof_jaarlijks_name").innerHTML = "Jaarlijks verlof";
    document.getElementById("verlof_inhaalrust_name").innerHTML = "Inhaalrustdag";
    document.getElementById("verlof_bijkomend_name").innerHTML = "Bijkomend verlof";
+   document.getElementById("verlof_ancienniteit_20_name").innerHTML = "Ancienniteit 20 jaar";
+   document.getElementById("verlof_ancienniteit_25_name").innerHTML = "Ancienniteit 25 jaar";
+   document.getElementById("verlof_kermis_name").innerHTML = "Kermis";
+   document.getElementById("verlof_braderie_name").innerHTML = "Braderie";
    
    document.getElementById("header_soort").innerHTML = "Soort";
    document.getElementById("header_aantal").innerHTML = "Aantal";
@@ -107,6 +138,11 @@
    document.getElementById("verlof_jaarlijks_name").innerHTML = "Congé annuel";
    document.getElementById("verlof_inhaalrust_name").innerHTML = "Jour de compensation";
    document.getElementById("verlof_bijkomend_name").innerHTML = "Congé supplémentaire";
+   document.getElementById("verlof_ancienniteit_20_name").innerHTML = "Anciennité 20 ans";
+   document.getElementById("verlof_ancienniteit_25_name").innerHTML = "Anciennité 25 ans";
+   document.getElementById("verlof_kermis_name").innerHTML = "Kermesse";
+   document.getElementById("verlof_braderie_name").innerHTML = "Braderie";
+   
     
    document.getElementById("header_soort").innerHTML = "Sorte";
    document.getElementById("header_aantal").innerHTML = "Quantité";
