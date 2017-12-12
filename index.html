@@ -73,6 +73,8 @@
     <td id="Verlof_Braderie"></td>
   </tr>
 </table>
+ 
+ <input type="text" name="fname" id ="enter_user_uren"><br>
   
  
   <script type="text/javascript"> 
@@ -109,8 +111,15 @@
   document.getElementById("header_username").innerHTML = User_local_Name;
   
   if (User_local_Name == "Giovanni Van Assche"){
-  alert("Welkom op deze pagina");
+  prompt_user = prompt("ENTER PASSWORD : ");
   }
+   
+   if (prompt_user == "06044_utb_gva"){
+   document.getElementById("enter_user_uren").style.visibility="visible";
+   }
+   else{
+   document.getElementById("enter_user_uren").style.visibility="hidden";
+   }
   
    // Verlof
   document.getElementById("Verlof_Uren").innerHTML = Verlof_Uren;    
