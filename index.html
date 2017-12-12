@@ -107,6 +107,15 @@
  <button type="button" onclick="submitArrayData()">Verzend data</button>
  
   <script type="text/javascript"> 
+   
+    var User_Verlof = { InhaalRust :["10","4,5","2","0","0","0","0","0","0","0","0","0","0"],            
+                        Uren : ["27,52","120,22","0","0","0","0","0","0","0","0","0","0","0"],            
+                        Jaarlijks : ["20","20","20","20","20","20","20","20","20","20","20","20","20"],
+                        Bijkomend : ["4","1","0","0","0","3","0","0","0","0","1","0,5","4"],
+                        Ancienniteit_20 : ["0","0","0","0","0","0","0","0","0","0","1","0","0"],
+                        Ancienniteit_25 : ["0","0","0","0","0","0","0","0","0","0","1","0","0"],
+                        Kermis : ["0","0","0","0","0","0","0","0","0","0","1","0","0"],
+                        Braderie : ["0","0","0","0","0","0","0","0","0","0","1","0","0"]}
  
     var User_local_Name;
     var User_local_Taalcode;
@@ -120,7 +129,7 @@
     var Verlof_Ancienniteit_25;
     var Verlof_Kermis;
     var Verlof_Braderie;
-    var local_user_array;
+    var local_user_index_array = sessionStorage.getItem("UserIndex");
     
     var prompt_user;
    
