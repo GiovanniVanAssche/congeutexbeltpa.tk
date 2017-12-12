@@ -1,7 +1,7 @@
 var users = { Name:["Giovanni Van Assche","David Debode","Stephane Lejour","Michaël Martens","Christophe Declercq","Paul Herregods","Luc Buyens","Mircea Danila","Patrick Mulier","Ayoub Khamlich","Armand Bayart","Davy Vercruysse","Thierry Verza"],             
     Psw:["06044","01235","01235","01235","01235","01235","01235","01235","01235","01235","01235","01235","01235"],
     Taalcode:["NL","FR","FR","NL","FR","NL","NL","FR","FR","FR","FR","NL","FR"]}; 
-var userIndex;
+
 
 function check(form){  
           
