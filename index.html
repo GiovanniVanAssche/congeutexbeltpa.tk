@@ -129,13 +129,10 @@
     var Verlof_Ancienniteit_25;
     var Verlof_Kermis;
     var Verlof_Braderie;
+   
     var local_user_index_array = sessionStorage.getItem("UserIndex");
     
-    var prompt_user;
-   
-   
-   function submitArrayData(){}
-   
+    var prompt_user;  
    
    
    User_local_Taalcode = sessionStorage.getItem("UserTaalcode");
@@ -143,13 +140,13 @@
    
    Verlof_Uren = User_Verlof.Uren[local_user_index_array];
    
-   //Verlof_InhaalRust = sessionStorage.getItem("UserInhaalRust");
-//   Verlof_Jaarlijks = sessionStorage.getItem("UserJaarlijks");
- //  Verlof_Bijkomend = sessionStorage.getItem("UserBijkomend");
-//   Verlof_Ancienniteit_20 = sessionStorage.getItem("UserAncienniteit_20");
-//   Verlof_Ancienniteit_25 = sessionStorage.getItem("UserAncienniteit_25");
-//   Verlof_Kermis = sessionStorage.getItem("UserKermis");
-//   Verlof_Braderie = sessionStorage.getItem("UserBraderie");
+   Verlof_InhaalRust = User_Verlof.InhaalRust[local_user_index_array];
+   Verlof_Jaarlijks = User_Verlof.Jaarlijks[local_user_index_array];
+   Verlof_Bijkomend = User_Verlof.Bijkomend[local_user_index_array];
+   Verlof_Ancienniteit_20 = User_Verlof.Ancienniteit_20[local_user_index_array];
+   Verlof_Ancienniteit_25 = User_Verlof.Ancienniteit_25[local_user_index_array];
+   Verlof_Kermis = User_Verlof.Kermis[local_user_index_array];
+   Verlof_Braderie = User_Verlof.Braderie[local_user_index_array];
     
    // Verwelkoming
     document.getElementById("header_username").innerHTML = User_local_Name;
