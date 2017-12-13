@@ -20,7 +20,7 @@ function check(form){
    }   
    
    if (valid)   {    
-     window.location.assign('https://giovannivanassche.github.io/congeutexbeltpa.tk/index.html');    
+     window.location.assign('https://giovannivanassche.github.io/congeutexbeltpa.tk/index.html?v=" + Date.now() + "');    
      return false;   
    }           
  }
