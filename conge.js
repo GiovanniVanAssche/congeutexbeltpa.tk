@@ -1,7 +1,7 @@
 var User_Verlof = { Name:["Giovanni Van Assche","David Debode","Stephane Lejour","Michaël Martens","Christophe Declercq","Paul Herregods","Luc Buyens","Mircea Danila","Patrick Mulier","Ayoub Khamlich","Armand Bayart","Davy Vercruysse","Thierry Verza"],                        
 InhaalRust :["10","4,5","2","4","0","0","0","0","0","0","0","0","0"],                                    
 Uren : ["27,52","120,22","0","67,40","0","0","0","0","0","0","0","0","0"],                                    
-Jaarlijks : ["1","20","20","4","0","20","20","20","20","20","20","20","20"],                        
+Jaarlijks : ["2","20","20","4","0","20","20","20","20","20","20","20","20"],                        
 Bijkomend : ["4","1","0","0","0","0","0","0","0","0","1","0,5","4"],                        
 Ancienniteit_20 : ["0","0","0","0","0","0","0","0","0","0","1","0","0"],                        
 Ancienniteit_25 : ["0","0","0","0","0","0","0","0","0","0","1","0","0"],                        
