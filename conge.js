@@ -75,7 +75,8 @@ document.getElementById("verlof_kermis_name").innerHTML = "Kermis";   
 document.getElementById("verlof_braderie_name").innerHTML = "Braderie";        
 
 document.getElementById("header_soort").innerHTML = "Soort";    
-document.getElementById("header_aantal").innerHTML = "Aantal";    
+document.getElementById("header_aantal").innerHTML = "Aantal";
+document.getElementById("header_afkorting").innerHTML = "Afkorting";
 }       
 
 if (User_local_Taalcode == "FR"){    
@@ -91,4 +92,5 @@ document.getElementById("verlof_braderie_name").innerHTML = "Braderie";     
 
 document.getElementById("header_soort").innerHTML = "Sorte";    
 document.getElementById("header_aantal").innerHTML = "Quantité";
+document.getElementById("header_afkorting").innerHTML = "Abréviation";
 }
