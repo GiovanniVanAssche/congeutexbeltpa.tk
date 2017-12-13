@@ -1,12 +1,14 @@
-var User_Verlof = { Name:["Line Vancauwenberghe","Giovanni Van Assche","David Debode","Stephane Lejour","Michaël Martens","Christophe Declercq","Paul Herregods","Luc Buyens","Mircea Danila","Patrick Mulier","Ayoub Khamlich","Armand Bayart","Davy Vercruysse","Thierry Verza"],                        
-InhaalRust :["25,5","10","4,5","2","4","0","0","0","0","0","0","0","0","0"],                                    
-Uren : ["0","52,52","120,22","0","67,40","0","0","0","0","0","0","0","0","0"],                                    
-Jaarlijks : ["3","2","20","20","4","0","20","20","20","20","20","20","20","20"],                        
-Bijkomend : ["0","4","1","0","0","0","0","0","0","0","0","1","0,5","4"],                        
-Ancienniteit_20 : ["0","0","0","0","0","0","0","0","0","0","0","1","0","0"],                        
+var User_Verlof = { Name:["Line Vancauwenberghe","Giovanni Van Assche","David Debode","Stephane Lejour","Michaël Martens",
+                          "Christophe Declercq","Paul Herregods","Luc Buyens","Mircea Danila","Patrick Mulier","Ayoub Khamlich",
+                          "Armand Bayart","Davy Vercruysse","Thierry Verza"],                        
+InhaalRust :["25,5","3","4,5","6","4","11","0","0","0","0","0","0","0","0"],                                    
+Uren : ["0","41,54","125,34","26,60","67,40","108,40","0","0","0","0","0","0","0","0"],                                    
+Jaarlijks : ["3","1","3","3","4","2","20","20","20","20","20","20","20","20"],                        
+Bijkomend : ["0","0","1","2,5","0","2","0","0","0","0","0","1","0,5","4"],                        
+Ancienniteit_20 : ["0","0","0","0,5","0","0","0","0","0","0","0","1","0","0"],                        
 Ancienniteit_25 : ["0","0","0","0","0","0","0","0","0","0","0","1","0","0"],                        
-Kermis : ["0","0","0","0","0","0","0","0","0","0","0","1","0","0"],                        
-Braderie : ["0","0","0","0","0","0","0","0","0","0","0","1","0","0"]};     
+Kermis : ["0","0","0","0","0","1","0","0","0","0","0","1","0","0"],                        
+Braderie : ["0","0","0","0","0","1","0","0","0","0","0","1","0","0"]};     
 
 var User_local_Name;    
 var User_local_Taalcode;           
