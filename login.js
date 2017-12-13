@@ -20,7 +20,7 @@ function check(form){
    }   
    
    if (valid)   {    
-     window.location.assign('index.html?v=" + Date.now() + "');    
+     window.location.assign('index.html?v=Date.now()');    
      return false;   
    }           
  }
