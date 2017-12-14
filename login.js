@@ -24,11 +24,17 @@ function check(form){
       else{
         var indexfault = users.Name.indexOf(form.userid.value);
         
+        if (indexfault = null){
+        alert("Gebruikersnaam niet gekend");
+        }
+        
           if (users.Taalcode[indexfault] == "NL"){
              alert("Het opgegeven wachtwoord klopt niet");
+            break;
             }
           if (users.Taalcode[indexfault] == "FR"){
              alert("Le mot de passe n'est pas correcte");
+            break;
           }
       }
    }   
