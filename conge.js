@@ -1,4 +1,4 @@
-var User_Verlof = { Name:["Line Vancauwenberghe","Giovanni Van Assche","David Debode","Stephane Lejour","Michaël Martens",
+var User_Verlof = { Name:["Line Vancauwenberghe","Giovanni Van Assche","David Debode","Stéphane Lejour","Michaël Martens",
                           "Christophe Declercq","Paul Herregods","Luc Buyens","Mircea Danila","Patrick Mulier","Ayoub Khamlich",
                           "Armand Bayart","Davy Vercruysse","Thierry Verza"],                        
 InhaalRust :["25,5","3","4,5","6","4","11","0","0","0","0","0","0","0","0"],                                    
