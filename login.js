@@ -1,42 +1,85 @@
-var users = { Name:["Line Vancauwenberghe","Giovanni Van Assche","David Debode","Stéphane Lejour","Michaël Martens","Christophe Declercq",
-                    "Paul Herregods","Luc Buyens","Mircea Danila","Patrick Mulier","Ayoub Khamlich","Armand Bayart","Davy Vercruysse",
-                    "Thierry Verza"],             
-    Psw:["05193utb","06044utb","04970utb","04439utb","04549utb","04922utb",
-         "02197utb","03464utb","05978utb","02200utb","11037utb","05840utb","05838utb",
-         "05615utb"],
-    Taalcode:["NL","NL","FR","FR","NL","FR","NL","NL","FR","FR","FR","FR","NL","FR"]}; 
+var _0xfa67=["\x4C\x69\x6E\x65\x20\x56\x61\x6E\x63\x61\x75\x77\x65\x6E\x62\x65\x72\x67\x68\x65",
+             "\x47\x69\x6F\x76\x61\x6E\x6E\x69\x20\x56\x61\x6E\x20\x41\x73\x73\x63\x68\x65",
+             "\x44\x61\x76\x69\x64\x20\x44\x65\x62\x6F\x64\x65",
+             "\x53\x74\xE9\x70\x68\x61\x6E\x65\x20\x4C\x65\x6A\x6F\x75\x72",
+             "\x4D\x69\x63\x68\x61\xEB\x6C\x20\x4D\x61\x72\x74\x65\x6E\x73",
+             "\x43\x68\x72\x69\x73\x74\x6F\x70\x68\x65\x20\x44\x65\x63\x6C\x65\x72\x63\x71",
+             "\x50\x61\x75\x6C\x20\x48\x65\x72\x72\x65\x67\x6F\x64\x73",
+             "\x4C\x75\x63\x20\x42\x75\x79\x65\x6E\x73",
+             "\x4D\x69\x72\x63\x65\x61\x20\x44\x61\x6E\x69\x6C\x61",
+             "\x50\x61\x74\x72\x69\x63\x6B\x20\x4D\x75\x6C\x69\x65\x72",
+             "\x41\x79\x6F\x75\x62\x20\x4B\x68\x61\x6D\x6C\x69\x63\x68",
+             "\x41\x72\x6D\x61\x6E\x64\x20\x42\x61\x79\x61\x72\x74",
+             "\x44\x61\x76\x79\x20\x56\x65\x72\x63\x72\x75\x79\x73\x73\x65",
+             "\x54\x68\x69\x65\x72\x72\x79\x20\x56\x65\x72\x7A\x61",
+             "\x30\x35\x31\x39\x33\x75\x74\x62",
+             "\x30\x36\x30\x34\x34\x75\x74\x62",
+             "\x30\x34\x39\x37\x30\x75\x74\x62",
+             "\x30\x34\x34\x33\x39\x75\x74\x62",
+             "\x30\x34\x35\x34\x39\x75\x74\x62",
+             "\x30\x34\x39\x32\x32\x75\x74\x62",
+             "\x30\x32\x31\x39\x37\x75\x74\x62",
+             "\x30\x33\x34\x36\x34\x75\x74\x62",
+             "\x30\x35\x39\x37\x38\x75\x74\x62",
+             "\x30\x32\x32\x30\x30\x75\x74\x62",
+             "\x31\x31\x30\x33\x37\x75\x74\x62",
+             "\x30\x35\x38\x34\x30\x75\x74\x62",
+             "\x30\x35\x38\x33\x38\x75\x74\x62",
+             "\x30\x35\x36\x31\x35\x75\x74\x62",
+             "\x4E\x4C",
+             "\x46\x52",
+             "\x6C\x65\x6E\x67\x74\x68",
+             "\x4E\x61\x6D\x65",
+             "\x76\x61\x6C\x75\x65",
+             "\x75\x73\x65\x72\x69\x64",
+             "\x70\x73\x77\x72\x64",
+             "\x50\x73\x77",
+             "\x55\x73\x65\x72\x4E\x61\x6D\x65",
+             "\x73\x65\x74\x49\x74\x65\x6D",
+             "\x55\x73\x65\x72\x54\x61\x61\x6C\x63\x6F\x64\x65",
+             "\x54\x61\x61\x6C\x63\x6F\x64\x65",
+             "\x55\x73\x65\x72\x49\x6E\x64\x65\x78",
+             "\x69\x6E\x64\x65\x78\x4F\x66",
+             "\x44\x65\x20\x67\x65\x62\x72\x75\x69\x6B\x65\x72\x73\x6E\x61\x61\x6D\x20\x6B\x6C\x6F\x70\x74\x20\x6E\x69\x65\x74\x20\x7C\x20\x4E\x6F\x6D\x20\x64\x27\x75\x74\x69\x6C\x69\x73\x61\x74\x65\x75\x72\x20\x70\x61\x73\x20\x63\x6F\x72\x72\x65\x63\x74",
+             "\x48\x65\x74\x20\x6F\x70\x67\x65\x67\x65\x76\x65\x6E\x20\x77\x61\x63\x68\x74\x77\x6F\x6F\x72\x64\x20\x6B\x6C\x6F\x70\x74\x20\x6E\x69\x65\x74\x20\x7C\x20\x4D\x6F\x74\x20\x64\x65\x20\x70\x61\x73\x73\x65\x20\x70\x61\x73\x20\x63\x6F\x72\x72\x65\x63\x74",
+             "\x69\x6E\x64\x65\x78\x2E\x68\x74\x6D\x6C\x3F\x76\x3D\x44\x61\x74\x65\x2E\x6E\x6F\x77\x28\x29",
+             "\x61\x73\x73\x69\x67\x6E","\x6C\x6F\x63\x61\x74\x69\x6F\x6E"];
+
+var users={Name:[_0xfa67[0],_0xfa67[1],_0xfa67[2],_0xfa67[3],_0xfa67[4],_0xfa67[5],_0xfa67[6],_0xfa67[7],_0xfa67[8],_0xfa67[9],_0xfa67[10],_0xfa67[11],_0xfa67[12],_0xfa67[13]],
+           Psw:[_0xfa67[14],_0xfa67[15],_0xfa67[16],_0xfa67[17],_0xfa67[18],_0xfa67[19],_0xfa67[20],_0xfa67[21],_0xfa67[22],_0xfa67[23],_0xfa67[24],_0xfa67[25],_0xfa67[26],_0xfa67[27]],
+           Taalcode:[_0xfa67[28],_0xfa67[28],_0xfa67[29],_0xfa67[29],_0xfa67[28],_0xfa67[29],_0xfa67[28],_0xfa67[28],_0xfa67[29],_0xfa67[29],_0xfa67[29],_0xfa67[29],_0xfa67[28],_0xfa67[29]]};
 
 
-function check(form){  
-          
-    for (var i = 0; i < users.Name.length ; i++)  {  
-        
-      if ((form.userid.value == users.Name[i]) && (form.pswrd.value == users.Psw[i]))  { 
-          
-       sessionStorage.setItem("UserName",form.userid.value);
-       sessionStorage.setItem("UserTaalcode",users.Taalcode[i]);                      
-       sessionStorage.setItem("UserIndex",i);
-          
-       valid = true;
-       
-          break;  
-      } 
-      else{
-        
-        if ( users.Name.indexOf(form.userid.value) == -1) {
-          alert("De gebruikersnaam klopt niet | Nom d'utilisateur pas correct");
-          break;
-        }
-        if ((form.userid.value == users.Name[i]) && (form.pswrd.value !== users.Psw[i])){
-          alert("Het opgegeven wachtwoord klopt niet | Mot de passe pas correct");          
-          break;
-          }
-      }
-   }   
+function check(_0x3ffbx3){
+  
+  for(var _0x3ffbx4=0;_0x3ffbx4< users[_0xfa67[31]][_0xfa67[30]];_0x3ffbx4++){
+    
+    if((_0x3ffbx3[_0xfa67[33]][_0xfa67[32]]== users[_0xfa67[31]][_0x3ffbx4])&& (_0x3ffbx3[_0xfa67[34]][_0xfa67[32]]== users[_0xfa67[35]][_0x3ffbx4])){
+      sessionStorage[_0xfa67[37]](_0xfa67[36],_0x3ffbx3[_0xfa67[33]][_0xfa67[32]]);
+      sessionStorage[_0xfa67[37]](_0xfa67[38],users[_0xfa67[39]][_0x3ffbx4]);
+      sessionStorage[_0xfa67[37]](_0xfa67[40],_0x3ffbx4);
       
-   
-   if (valid)   {    
-     window.location.assign('index.html?v=Date.now()');    
-     return false;   
-   }           
- }
+      valid= true;
+      break
+    }
+    else {if(users[_0xfa67[31]][_0xfa67[41]](_0x3ffbx3[_0xfa67[33]][_0xfa67[32]])==  -1){
+      alert(_0xfa67[42]);
+      break
+    };
+          if((_0x3ffbx3[_0xfa67[33]][_0xfa67[32]]== users[_0xfa67[31]][_0x3ffbx4])&& (_0x3ffbx3[_0xfa67[34]][_0xfa67[32]]!== users[_0xfa67[35]][_0x3ffbx4])){
+            alert(_0xfa67[43]);
+            break
+          }
+         }
+  };
+             
+             
+             
+             
+             
+             
+             if(valid){
+               window[_0xfa67[46]][_0xfa67[45]](_0xfa67[44]);
+               return false
+             }
+}
