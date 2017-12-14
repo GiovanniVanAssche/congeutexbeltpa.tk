@@ -22,11 +22,12 @@ function check(form){
           break;  
       } 
       else{
-        var indexfault = users.Name.indexOf(form.userid.value);
         
-        if (indexfault == null){
-        alert("Gebruikersnaam niet gekend");
+        if ((form.userid.value !== users.Name[i]) && (form.pswrd.value == users.Psw[i])){
+          alert("De gebruikersnaam klopt niet");
+          break;
         }
+        var indexfault = users.Name.indexOf(form.userid.value);
         
           if (users.Taalcode[indexfault] == "NL"){
              alert("Het opgegeven wachtwoord klopt niet");
