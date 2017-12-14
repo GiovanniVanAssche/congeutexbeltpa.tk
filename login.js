@@ -25,7 +25,7 @@ function check(form){
           if (users.Taalcode == "NL"){
              alert("Combinatie van gebruikersnaam en wachtwoord komt niet overeen");
             }
-          if if (users.Taalcode == "FR"){
+          if (users.Taalcode == "FR"){
              alert("Combinaison du nom d'utilisateur et du mot de passe ne correspond pas");
           }
       }
