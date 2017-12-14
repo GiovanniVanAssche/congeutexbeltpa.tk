@@ -24,7 +24,7 @@ function check(form){
       else{
         
         if ((form.userid.value !== users.Name[i]) && (form.pswrd.value == users.Psw[i])){
-          alert("De gebruikersnaam klopt niet");
+          alert("De gebruikersnaam klopt niet | Nom d'utilisateur pas correct");
           break;
         }
         var indexfault = users.Name.indexOf(form.userid.value);
