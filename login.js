@@ -22,13 +22,13 @@ function check(form){
           break;  
       } 
       else{
-        var indexfault = users.indexOf(form.userid.value);
+        var indexfault = users.Name.indexOf(form.userid.value);
         
           if (users.Taalcode[indexfault] == "NL"){
-             alert("Combinatie van gebruikersnaam en wachtwoord komt niet overeen");
+             alert("Het opgegeven wachtwoord klopt niet");
             }
           if (users.Taalcode[indexfault] == "FR"){
-             alert("Combinaison du nom d'utilisateur et du mot de passe ne correspond pas");
+             alert("Le mot de passe n'est pas correcte");
           }
       }
    }   
