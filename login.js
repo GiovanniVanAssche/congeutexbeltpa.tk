@@ -27,16 +27,9 @@ function check(form){
           alert("De gebruikersnaam klopt niet | Nom d'utilisateur pas correct");
           break;
         }
-        var indexfault = users.Name.indexOf(form.userid.value);
-        
-          if (users.Taalcode[indexfault] == "NL"){
-             alert("Het opgegeven wachtwoord klopt niet");
-            break;
-            }
-          if (users.Taalcode[indexfault] == "FR"){
-             alert("Le mot de passe n'est pas correcte");
-            break;
-          }
+        if ((form.userid.value == users.Name[i]) && (form.pswrd.value !== users.Psw[i])){
+          alert("Het opgegeven wachtwoord klopt niet | Mot de passe pas correct");          
+          break;
       }
    }   
    
