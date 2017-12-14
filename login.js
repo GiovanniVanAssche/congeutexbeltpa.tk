@@ -24,7 +24,7 @@ function check(form){
       else{
         var indexfault = users.Name.indexOf(form.userid.value);
         
-        if (indexfault = null){
+        if (indexfault == null){
         alert("Gebruikersnaam niet gekend");
         }
         
