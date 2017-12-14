@@ -23,7 +23,7 @@ function check(form){
       } 
       else{
         
-        if ((form.userid.value !== users.Name[i]) && (form.pswrd.value == users.Psw[i])){
+        if (form.userid.value !== users.Name[i]){
           alert("De gebruikersnaam klopt niet | Nom d'utilisateur pas correct");
           break;
         }
