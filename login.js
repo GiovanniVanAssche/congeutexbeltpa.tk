@@ -31,6 +31,7 @@ function check(form){
           alert("Het opgegeven wachtwoord klopt niet | Mot de passe pas correct");          
           break;
           }
+      }
    }   
       
    
