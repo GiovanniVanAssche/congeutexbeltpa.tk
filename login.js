@@ -30,6 +30,7 @@ function check(form){
         if ((form.userid.value == users.Name[i]) && (form.pswrd.value !== users.Psw[i])){
           alert("Het opgegeven wachtwoord klopt niet | Mot de passe pas correct");          
           break;
+          }
       }
    }   
    
