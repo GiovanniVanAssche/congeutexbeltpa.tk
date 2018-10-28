@@ -23,7 +23,7 @@
       } 
       else{
         
-        if (form.userid.value !== users.Name[i]){
+       
         if ( users.Name.indexOf(form.userid.value) == -1) {
           alert("De gebruikersnaam klopt niet | Nom d'utilisateur pas correct");
           break;
